@@ -3,46 +3,78 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kullanım Koşulları ve Sorumluluk Reddi - Cep Bakiye</title>
+    <title>Kullanım Koşulları - Cep Bakiye</title>
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <style>
-        .legal-content {
-            padding: 120px 20px 60px;
+        .policy-container {
             max-width: 800px;
-            margin: 0 auto;
+            margin: 120px auto 60px;
+            padding: 40px;
+            background: var(--glass-bg);
+            border: 1px solid var(--glass-border);
+            border-radius: 20px;
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+        }
+        .policy-container h1 {
+            color: var(--primary);
+            margin-bottom: 30px;
+        }
+        .policy-container h2 {
+            margin-top: 30px;
+            margin-bottom: 15px;
+            color: #fff;
+            font-size: 1.5rem;
+        }
+        .policy-container p {
+            margin-bottom: 15px;
+            line-height: 1.8;
             color: var(--text-color);
         }
-        .legal-content h1 { margin-bottom: 30px; color: var(--primary); }
-        .legal-content h2 { margin-top: 40px; margin-bottom: 15px; color: var(--secondary); }
-        .legal-content p { margin-bottom: 15px; line-height: 1.6; color: var(--text-muted); }
+        .back-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            color: var(--secondary);
+            text-decoration: none;
+            margin-bottom: 30px;
+            font-weight: 500;
+        }
+        .back-link:hover {
+            color: var(--primary);
+        }
     </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-    <nav class="navbar scrolled">
-        <div class="container nav-container">
-            <div class="logo">
-                <a href="index.html" style="color: inherit; text-decoration: none;">Cep Bakiye</a>
-            </div>
-            <a href="index.html" class="btn btn-outline nav-btn">Geri Dön</a>
-        </div>
-    </nav>
+    <div class="policy-container">
+        <a href="index.html" class="back-link"><i class="fa-solid fa-arrow-left"></i> Ana Sayfaya Dön</a>
+        
+        <h1>Kullanım Koşulları</h1>
+        <p>Son güncellenme: 14 Haziran 2026</p>
 
-    <div class="legal-content fade-in">
-        <h1>Kullanım Koşulları ve Sorumluluk Reddi</h1>
-        <p>Son Güncelleme: 15 Haziran 2026</p>
+        <h2>1. Kabul Edilme</h2>
+        <p>Cep Bakiye uygulamasını ("Uygulama") indirerek ve kullanarak, bu kullanım koşullarını tamamen okuduğunuzu, anladığınızı ve kabul ettiğinizi beyan edersiniz. Eğer bu koşulları kabul etmiyorsanız, uygulamayı kullanmamalısınız.</p>
 
-        <h2>1. Hizmetin Doğası</h2>
-        <p>Cep Bakiye uygulaması, kullanıcıların kendi kişisel borç ve alacaklarını cihazlarında (offline) takip etmeleri için açık kaynaklı olarak geliştirilmiş tamamen ücretsiz bir araçtır. Uygulama hiçbir banka, finans kuruluşu veya resmi kurum ile bağlantılı değildir.</p>
+        <h2>2. Uygulama Kullanımı</h2>
+        <p>Cep Bakiye, kişisel borç ve alacak takibini kolaylaştırmak amacıyla geliştirilmiş bir araçtır. Kullanıcı, uygulamaya girdiği verilerin doğruluğundan tamamen kendisi sorumludur.</p>
 
-        <h2>2. Sorumluluk Reddi (Disclaimer)</h2>
-        <p>Bu uygulama (ve kaynak kodları) "OLDUĞU GİBİ" (AS IS) esasına göre sunulmaktadır. Geliştirici, uygulamanın kullanımından, veri kaybından, telefondaki olası arızalardan veya finansal zararlardan <strong>kesinlikle sorumlu tutulamaz.</strong> Kullanıcı, verilerini yedeklemekten kendisi sorumludur.</p>
+        <h2>3. Sorumluluğun Sınırlandırılması</h2>
+        <p>Uygulama tamamen "olduğu gibi" sunulmaktadır. Geliştirici, uygulamanın kullanımından, veri kayıplarından veya cihazınızda oluşabilecek herhangi bir doğrudan/dolaylı maddi veya manevi zarardan sorumlu tutulamaz. Verileriniz tamamen sizin cihazınızda depolandığı için yedeklemelerini sağlamak sizin sorumluluğunuzdadır.</p>
 
-        <h2>3. KVKK ve Veri Gizliliği</h2>
-        <p>Uygulama hiçbir sunucu bağlantısına sahip olmadığı için kullanıcıların verilerini toplamaz, işlemez ve aktarmaz. Dolayısıyla uygulamanın KVKK veya GDPR gibi veri koruma kanunlarını ihlal edecek bir veri işleme faaliyeti bulunmamaktadır.</p>
+        <h2>4. Lisans ve Fikri Mülkiyet</h2>
+        <p>Uygulamanın tasarımı, içeriği, kodları ve markası tamamen geliştiriciye aittir. İzinsiz kopyalanamaz, çoğaltılamaz ve ticari amaçlarla kullanılamaz.</p>
 
-        <h2>4. Lisans</h2>
-        <p>Cep Bakiye, MIT Lisansı altında açık kaynaklı olarak dağıtılmaktadır. Kodları kopyalamakta ve kişisel amaçlarla kullanmakta özgürsünüz.</p>
+        <h2>5. Dışa Aktarma (PDF) İşlevleri</h2>
+        <p>Uygulamanın ürettiği PDF çıktıları tamamen bilgilendirme amaçlıdır; resmi, mali veya hukuki bir evrak niteliği taşımaz.</p>
+
+        <h2>6. Değişiklikler</h2>
+        <p>Geliştirici, bu Kullanım Koşulları'nda dilediği zaman değişiklik yapma hakkını saklı tutar. Değişiklikler uygulamanın sayfasında yayımlandığı andan itibaren geçerli olur.</p>
+
+        <h2>7. İletişim</h2>
+        <p>Kullanım koşulları hakkında sorularınız veya talepleriniz için:<br>
+        <strong>E-posta:</strong> kaanay918@gmail.com</p>
     </div>
 </body>
 </html>
