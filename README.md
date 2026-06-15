@@ -1,5 +1,4 @@
 <div align="center">
-  <img src="landing_page/downloads/cepbakiye.apk" alt="Logo" width="80" height="80">
   <h1 align="center">Cep Bakiye</h1>
 
   <p align="center">
