@@ -1,17 +1,54 @@
-# borc_takip_app
+<div align="center">
+  <img src="landing_page/downloads/cepbakiye.apk" alt="Logo" width="80" height="80">
+  <h1 align="center">Cep Bakiye</h1>
 
-A new Flutter project.
+  <p align="center">
+    Borç ve alacaklarınızı zahmetsizce takip edebileceğiniz, güvenli ve çevrimdışı çalışan Flutter tabanlı mobil uygulama.
+    <br />
+    <a href="https://github.com/kaanMOON-wq/-cep-bakiye-"><strong>Projeyi İncele »</strong></a>
+    <br />
+  </p>
+</div>
 
-## Getting Started
+---
 
-This project is a starting point for a Flutter application.
+## 📱 Özellikler
+- **Kâr & Zarar Sistemi:** Borç ve alacaklarınızı karşılaştırarak net durumunuzu anlık görün.
+- **Detaylı İstatistikler:** Grafiklerle toplam durumunuzu tek bir ekranda inceleyin.
+- **Tamamen Çevrimdışı & Güvenli:** Verileriniz asla bir bulut sunucusuna gönderilmez, tamamen cihazınızda kalır.
+- **Koyu ve Açık Tema:** Göz yormayan, sisteminizle uyumlu modern tasarım.
+- **PDF Dışa Aktarma:** Hesap özetlerinizi PDF olarak kaydedin ve paylaşın.
+- **Akıllı Hatırlatıcılar (İsteğe Bağlı):** Vade tarihlerinde bildirim alın.
 
-A few resources to get you started if this is your first Flutter project:
+---
 
-- [Learn Flutter](https://docs.flutter.dev/get-started/learn-flutter)
-- [Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Flutter learning resources](https://docs.flutter.dev/reference/learning-resources)
+## 📥 Nasıl İndirilir ve Yüklenir?
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+Cep Bakiye şu an için Android cihazlarda (APK olarak) kullanılabilmektedir. Cihazınıza yüklemek için aşağıdaki çok basit adımları izleyebilirsiniz:
+
+1. **İndirin:** Bu GitHub sayfasında yer alan `landing_page/downloads` klasöründeki veya sağ taraftaki **Releases** kısmındaki `cepbakiye.apk` dosyasına tıklayarak indirin.
+2. **İzin Verin:** İndirdiğiniz APK dosyasına tıkladığınızda cihazınız "Bilinmeyen Kaynaklar" uyarısı verebilir. Kuruluma devam etmek için `Ayarlar > Güvenlik` bölümünden bilinmeyen kaynaklara izin verin.
+3. **Kurun:** Kurulum ekranında "Yükle" butonuna basın.
+4. **Hazır!:** Cep Bakiye kuruldu! Artık finansal durumunuzu güvenle takip etmeye başlayabilirsiniz.
+
+---
+
+## 🛠️ Teknolojiler
+Bu proje aşağıdaki teknolojiler kullanılarak geliştirilmiştir:
+- [Flutter](https://flutter.dev/) - Çapraz platform mobil UI iskeleti
+- [Dart](https://dart.dev/) - Programlama dili
+- Vanilla HTML/CSS/JS (Açılış sayfası için)
+
+---
+
+## 🤝 Katkıda Bulunma
+Bu proje açık kaynaklıdır ve gelişime açıktır.
+1. Projeyi Fork'layın (`Fork` butonuna basın)
+2. Yeni bir dal (branch) oluşturun (`git checkout -b feature/YeniOzellik`)
+3. Değişikliklerinizi commit'leyin (`git commit -m 'Yeni bir özellik eklendi'`)
+4. Dalınızı gönderin (`git push origin feature/YeniOzellik`)
+5. Bir Pull Request oluşturun!
+
+---
+
+⭐ Eğer bu proje hoşunuza gittiyse veya size yardımcı olduysa GitHub üzerinden **Yıldız (Star)** vermeyi unutmayın!
