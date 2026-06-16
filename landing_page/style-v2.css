@@ -26,28 +26,6 @@ body {
     line-height: 1.6;
     overflow-x: hidden;
     position: relative;
-    cursor: none; /* Hide default cursor to use custom one */
-}
-
-/* Custom Glow Cursor */
-.custom-cursor {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 400px;
-    height: 400px;
-    background: radial-gradient(circle, rgba(99, 102, 241, 0.15) 0%, rgba(139, 92, 246, 0) 70%);
-    border-radius: 50%;
-    transform: translate(-50%, -50%);
-    pointer-events: none;
-    z-index: 9999;
-    transition: width 0.3s, height 0.3s;
-}
-
-/* Hide custom cursor on mobile */
-@media (max-width: 768px) {
-    body { cursor: auto; }
-    .custom-cursor { display: none; }
 }
 
 /* Background Gradients */
