@@ -91,4 +91,26 @@ document.addEventListener('DOMContentLoaded', () => {
             window.location.href = `mailto:kaanay918@gmail.com?subject=${subject}&body=${body}`;
         });
     }
+
+    // Custom Cursor Logic
+    const cursor = document.querySelector('.custom-cursor');
+    if (cursor && window.innerWidth > 768) {
+        document.addEventListener('mousemove', (e) => {
+            cursor.style.left = e.clientX + 'px';
+            cursor.style.top = e.clientY + 'px';
+        });
+
+        // Add hover effect when hovering over interactive elements
+        const interactiveElements = document.querySelectorAll('a, button, .feature-card, .faq-item');
+        interactiveElements.forEach(el => {
+            el.addEventListener('mouseenter', () => {
+                cursor.style.transform = 'translate(-50%, -50%) scale(1.5)';
+                cursor.style.background = 'radial-gradient(circle, rgba(139, 92, 246, 0.2) 0%, rgba(99, 102, 241, 0) 70%)';
+            });
+            el.addEventListener('mouseleave', () => {
+                cursor.style.transform = 'translate(-50%, -50%) scale(1)';
+                cursor.style.background = 'radial-gradient(circle, rgba(99, 102, 241, 0.15) 0%, rgba(139, 92, 246, 0) 70%)';
+            });
+        });
+    }
 });

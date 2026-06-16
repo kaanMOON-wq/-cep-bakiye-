@@ -26,6 +26,28 @@ body {
     line-height: 1.6;
     overflow-x: hidden;
     position: relative;
+    cursor: none; /* Hide default cursor to use custom one */
+}
+
+/* Custom Glow Cursor */
+.custom-cursor {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 400px;
+    height: 400px;
+    background: radial-gradient(circle, rgba(99, 102, 241, 0.15) 0%, rgba(139, 92, 246, 0) 70%);
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    pointer-events: none;
+    z-index: 9999;
+    transition: width 0.3s, height 0.3s;
+}
+
+/* Hide custom cursor on mobile */
+@media (max-width: 768px) {
+    body { cursor: auto; }
+    .custom-cursor { display: none; }
 }
 
 /* Background Gradients */
@@ -76,9 +98,17 @@ a {
 }
 
 .gradient-text {
-    background: linear-gradient(135deg, var(--primary), var(--secondary));
+    background: linear-gradient(135deg, var(--primary), var(--secondary), #3ddc84, var(--primary));
+    background-size: 300% 300%;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+    animation: gradientShift 6s ease infinite;
+}
+
+@keyframes gradientShift {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
 }
 
 .section-title {
@@ -354,11 +384,30 @@ a {
 
 .feature-card {
     padding: 40px 30px;
-    transition: transform 0.3s ease;
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    position: relative;
+    overflow: hidden;
+}
+
+.feature-card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg, transparent, rgba(255, 255, 255, 0.05), transparent);
+    transition: left 0.5s ease;
 }
 
 .feature-card:hover {
-    transform: translateY(-10px);
+    transform: translateY(-10px) scale(1.02);
+    box-shadow: 0 20px 40px rgba(99, 102, 241, 0.2);
+    border-color: rgba(139, 92, 246, 0.5);
+}
+
+.feature-card:hover::before {
+    left: 100%;
 }
 
 .icon-wrapper {
