@@ -1,81 +1,152 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="tr">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Kullanım Koşulları - Cep Bakiye</title>
-    <link rel="stylesheet" href="style-v2.css">
-    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="icon" type="image/svg+xml" href="favicon.svg">
-    <style>
-        .policy-container {
-            max-width: 800px;
-            margin: 120px auto 60px;
-            padding: 40px;
-            background: var(--glass-bg);
-            border: 1px solid var(--glass-border);
-            border-radius: 20px;
-            backdrop-filter: blur(20px);
-            -webkit-backdrop-filter: blur(20px);
-        }
-        .policy-container h1 {
-            color: var(--primary);
-            margin-bottom: 30px;
-        }
-        .policy-container h2 {
-            margin-top: 30px;
-            margin-bottom: 15px;
-            color: #fff;
-            font-size: 1.5rem;
-        }
-        .policy-container p {
-            margin-bottom: 15px;
-            line-height: 1.8;
-            color: var(--text-color);
-        }
-        .back-link {
-            display: inline-flex;
-            align-items: center;
-            gap: 8px;
-            color: var(--secondary);
-            text-decoration: none;
-            margin-bottom: 30px;
-            font-weight: 500;
-        }
-        .back-link:hover {
-            color: var(--primary);
-        }
-    </style>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Cep Bakiye — Kullanım Koşulları</title>
+  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --bg: #000;
+      --surface: rgba(255, 255, 255, 0.025);
+      --fg: oklch(96% 0.006 280);
+      --muted: oklch(58% 0.03 265);
+      --border: rgba(255, 255, 255, 0.07);
+      --accent: oklch(62% 0.22 280);
+      --shell: #000;
+      --font-display: 'Rubik', system-ui, sans-serif;
+      --font-body: 'Rubik', system-ui, sans-serif;
+      --font-mono: ui-monospace, 'SF Mono', Menlo, monospace;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body {
+      background: var(--shell);
+      color: var(--fg);
+      font: 16px/1.7 var(--font-body);
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+    }
+    a { color: var(--accent); text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    .container {
+      max-width: 720px;
+      margin: 0 auto;
+      padding: 60px 24px 100px;
+    }
+
+    .top-bar {
+      padding: 20px 24px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+    .top-bar a {
+      font-size: 13px;
+      color: var(--muted);
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+    .top-bar a:hover { color: var(--fg); text-decoration: none; }
+
+    h1 {
+      font: 400 48px/1.08 var(--font-display);
+      color: var(--fg);
+      letter-spacing: -0.02em;
+      margin-bottom: 12px;
+    }
+    .last-updated {
+      font-size: 12px;
+      color: var(--muted);
+      margin-bottom: 48px;
+    }
+    h2 {
+      font: 400 28px/1.2 var(--font-display);
+      color: var(--fg);
+      margin: 40px 0 16px;
+      letter-spacing: -0.01em;
+    }
+    h3 {
+      font-size: 15px;
+      font-weight: 600;
+      color: var(--fg);
+      margin: 24px 0 8px;
+    }
+    p {
+      font-size: 14px;
+      line-height: 1.8;
+      color: rgba(255, 255, 255, 0.65);
+      margin-bottom: 16px;
+    }
+    ul {
+      padding-left: 20px;
+      margin-bottom: 16px;
+    }
+    ul li {
+      font-size: 14px;
+      line-height: 1.7;
+      color: rgba(255, 255, 255, 0.65);
+      margin-bottom: 6px;
+    }
+    .back-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      font-size: 13px;
+      color: var(--muted);
+      margin-bottom: 40px;
+    }
+    .back-link:hover { color: var(--fg); }
+  </style>
 </head>
 <body>
-    <div class="policy-container">
-        <a href="index.html" class="back-link"><i class="fa-solid fa-arrow-left"></i> Ana Sayfaya Dön</a>
-        
-        <h1>Kullanım Koşulları</h1>
-        <p>Son güncellenme: 14 Haziran 2026</p>
 
-        <h2>1. Kabul Edilme</h2>
-        <p>Cep Bakiye uygulamasını ("Uygulama") indirerek ve kullanarak, bu kullanım koşullarını tamamen okuduğunuzu, anladığınızı ve kabul ettiğinizi beyan edersiniz. Eğer bu koşulları kabul etmiyorsanız, uygulamayı kullanmamalısınız.</p>
+  <div class="top-bar">
+    <a href="index.html">
+      <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M19 12H5m7-7-7 7 7 7"/>
+      </svg>
+      Ana Sayfa
+    </a>
+  </div>
 
-        <h2>2. Uygulama Kullanımı</h2>
-        <p>Cep Bakiye, kişisel borç ve alacak takibini kolaylaştırmak amacıyla geliştirilmiş bir araçtır. Kullanıcı, uygulamaya girdiği verilerin doğruluğundan tamamen kendisi sorumludur.</p>
+  <div class="container">
+    <a href="index.html" class="back-link">
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M19 12H5m7-7-7 7 7 7"/>
+      </svg>
+      Ana Sayfa'ya Dön
+    </a>
 
-        <h2>3. Sorumluluğun Sınırlandırılması</h2>
-        <p>Uygulama tamamen "olduğu gibi" sunulmaktadır. Geliştirici, uygulamanın kullanımından, veri kayıplarından veya cihazınızda oluşabilecek herhangi bir doğrudan/dolaylı maddi veya manevi zarardan sorumlu tutulamaz. Verileriniz tamamen sizin cihazınızda depolandığı için yedeklemelerini sağlamak sizin sorumluluğunuzdadır.</p>
+    <h1>Kullanım Koşulları</h1>
+    <div class="last-updated">Son güncelleme: 23 Haziran 2026</div>
 
-        <h2>4. Lisans ve Fikri Mülkiyet</h2>
-        <p>Uygulamanın tasarımı, içeriği, kodları ve markası tamamen geliştiriciye aittir. İzinsiz kopyalanamaz, çoğaltılamaz ve ticari amaçlarla kullanılamaz.</p>
+    <p>Cep Bakiye'yi kullanarak aşağıdaki koşulları kabul etmiş olursunuz.</p>
 
-        <h2>5. Dışa Aktarma (PDF) İşlevleri</h2>
-        <p>Uygulamanın ürettiği PDF çıktıları tamamen bilgilendirme amaçlıdır; resmi, mali veya hukuki bir evrak niteliği taşımaz.</p>
+    <h2>Hizmet Tanımı</h2>
+    <p>Cep Bakiye, kişisel borç ve alacak takibi yapmanızı sağlayan bir finansal hafıza aracıdır. Uygulama bir bankacılık hizmeti değildir ve finansal tavsiye vermez.</p>
 
-        <h2>6. Değişiklikler</h2>
-        <p>Geliştirici, bu Kullanım Koşulları'nda dilediği zaman değişiklik yapma hakkını saklı tutar. Değişiklikler uygulamanın sayfasında yayımlandığı andan itibaren geçerli olur.</p>
+    <h2>Sorumluluk Reddi</h2>
+    <p>Cep Bakiye, kaydedilen verilerin doğruluğu konusunda garanti vermez. Kullanıcı, kendi girdiği verilerin doğruluğundan sorumludur. Uygulama, veri kaybı durumunda sorumluluk kabul etmez. Düzenli yedekleme yapmanız önerilir.</p>
 
-        <h2>7. İletişim</h2>
-        <p>Kullanım koşulları hakkında sorularınız veya talepleriniz için:<br>
-        <strong>E-posta:</strong> kaanay918@gmail.com</p>
-    </div>
+    <h2>Fikri Mülkiyet</h2>
+    <p>Cep Bakiye uygulamasının tüm hakları saklıdır. Uygulamanın tersine mühendislik yapılması, kopyalanması veya izinsiz dağıtılması yasaktır.</p>
+
+    <h2>Değişiklikler</h2>
+    <p>Bu koşullar önceden bildirimde bulunmaksızın güncellenebilir. Güncellemeler bu sayfada yayınlandığı anda yürürlüğe girer.</p>
+
+    <h2>İletişim</h2>
+    <p>Sorularınız için: <a href="mailto:kaanay918@gmail.com">kaanay918@gmail.com</a></p>
+
+    <p style="margin-top:48px;padding-top:32px;border-top:1px solid var(--border);font-size:13px;color:var(--muted)">
+      Gizlilik politikamızı görüntülemek için <a href="privacy.html">tıklayın</a>.
+    </p>
+  </div>
+
 </body>
 </html>
