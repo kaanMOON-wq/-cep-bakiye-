@@ -7,7 +7,7 @@
   <link rel="icon" type="image/svg+xml" href="favicon.svg" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
   <style>
     :root {
       --bg: #000;
@@ -17,16 +17,16 @@
       --border: rgba(255, 255, 255, 0.07);
       --accent: oklch(62% 0.22 280);
       --shell: #000;
-      --font-display: 'Rubik', system-ui, sans-serif;
-      --font-body: 'Rubik', system-ui, sans-serif;
-      --font-mono: ui-monospace, 'SF Mono', Menlo, monospace;
+      --font-display: 'Outfit', system-ui, sans-serif;
+      --font-body: 'Inter', system-ui, sans-serif;
+      --font-mono: 'JetBrains Mono', ui-monospace, 'SF Mono', Menlo, monospace;
     }
     * { box-sizing: border-box; margin: 0; padding: 0; }
     html { scroll-behavior: smooth; }
     body {
       background: var(--shell);
       color: var(--fg);
-      font: 16px/1.7 var(--font-body);
+      font: 16px/1.6 var(--font-body);
       -webkit-font-smoothing: antialiased;
       -moz-osx-font-smoothing: grayscale;
     }
@@ -55,7 +55,7 @@
     .top-bar a:hover { color: var(--fg); text-decoration: none; }
 
     h1 {
-      font: 400 48px/1.08 var(--font-display);
+      font: 600 48px/1.08 var(--font-display);
       color: var(--fg);
       letter-spacing: -0.02em;
       margin-bottom: 12px;
@@ -66,7 +66,7 @@
       margin-bottom: 48px;
     }
     h2 {
-      font: 400 28px/1.2 var(--font-display);
+      font: 600 28px/1.2 var(--font-display);
       color: var(--fg);
       margin: 40px 0 16px;
       letter-spacing: -0.01em;
@@ -78,8 +78,8 @@
       margin: 24px 0 8px;
     }
     p {
-      font-size: 14px;
-      line-height: 1.8;
+      font-size: 15px;
+      line-height: 1.6;
       color: rgba(255, 255, 255, 0.65);
       margin-bottom: 16px;
     }
@@ -88,8 +88,8 @@
       margin-bottom: 16px;
     }
     ul li {
-      font-size: 14px;
-      line-height: 1.7;
+      font-size: 15px;
+      line-height: 1.6;
       color: rgba(255, 255, 255, 0.65);
       margin-bottom: 6px;
     }
