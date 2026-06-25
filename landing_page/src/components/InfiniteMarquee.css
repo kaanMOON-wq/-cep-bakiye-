@@ -1,0 +1,51 @@
+.marquee-wrapper {
+  overflow: hidden;
+  width: 100%;
+  border-top: 1px solid rgba(255, 255, 255, 0.04);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.04);
+  background: rgba(0, 0, 0, 0.4);
+  padding: 16px 0;
+  display: flex;
+  white-space: nowrap;
+  position: relative;
+  z-index: 10;
+  backdrop-filter: blur(8px);
+}
+
+.marquee-track {
+  display: flex;
+  width: max-content;
+  animation: scroll-marquee 40s linear infinite;
+}
+
+.marquee-content {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 0;
+}
+
+.marquee-item {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 13px;
+  letter-spacing: 2px;
+  color: #888;
+  padding: 0 30px;
+  display: inline-block;
+  user-select: none;
+}
+
+.marquee-dot {
+  color: #444;
+  font-size: 10px;
+}
+
+@keyframes scroll-marquee {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    /* Since we have 4 copies, shifting by -25% moves exactly 1 copy width */
+    transform: translateX(-25%);
+  }
+}
